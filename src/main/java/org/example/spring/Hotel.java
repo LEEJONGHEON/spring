@@ -9,7 +9,8 @@ public class Hotel {
     private Restaurant restaurant;
 
     //클래스 내부에서 객체 할당 x -> 선언시 값 할당(외부에서 값할당)
-    @Autowired //컨테이너에 있는 객체할당
+
+    @Autowired //컨테이너에 있는 객체할당, 생성자 주입
     public Hotel(SuiteRoom room, Restaurant restaurant) {
         this.room = room;
         this.restaurant = restaurant;
